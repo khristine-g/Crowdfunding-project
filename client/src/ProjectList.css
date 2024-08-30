@@ -1,0 +1,89 @@
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 200px;
+  margin-top: 150px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.project-list-title{
+
+
+  text-align: center;
+  font-size: 2.5rem;
+  /* font-weight: bold; */
+  color: #333333;
+}
+.filter-container {
+  margin-bottom: 20px;
+  margin: 20px;
+}
+
+#category-filter {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.project-card {
+  width: 22%; /* Adjust to fit 4 cards in a row */
+  height: 500px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.6s ease;
+  margin: 20px;
+ 
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  transition: transform 2s ease;
+}
+.project-card:hover img {
+  transform: scale(1); /* Zoom in effect on image */
+}
+
+.project-card h4 {
+  font-size: 18px;
+  margin: 20px;
+}
+
+
+.project-card p {
+  margin: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.view-all-button {
+  width: 15%;
+  height: 50px;
+ margin-left: 650px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.view-all-button:hover {
+  background-color: #0056b3;
+}

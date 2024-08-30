@@ -1,0 +1,62 @@
+/* ContributionForm.css */
+
+.contribution-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  margin-top: 100px;
+}
+
+.contribution-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.contribution-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contribution-form label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.contribution-form input[type="number"],
+.contribution-form input[type="tel"] {
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.contribution-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 100px;
+}
+
+.contribution-form button:hover {
+  background-color: #218838;
+}
+
+.contribution-form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.contribution-form input::placeholder {
+  color: #888;
+}
