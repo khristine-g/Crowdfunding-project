@@ -1,71 +1,67 @@
+/* src/Home.css */
 .home-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px 20px;
-  background-color: #f4f4f4;
-  margin-bottom: 100px;
+  width: 100vw;
+  height: 100%; /* Adjust height to accommodate all content */
+  overflow: hidden;
 }
 
-.image-and-content {
-  display: flex;
-  align-items: stretch;
-  max-width: 100vw;
-  height: 90vh;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.carousel {
+  width: 100%;
+  height: 70vh; /* Carousel takes up 70% of the viewport height */
   position: relative;
-}
-
-.image-container {
-  flex: 1;
   overflow: hidden;
 }
 
-.home-img {
+.carousel-images {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 1s ease-in-out;
+}
+
+.carousel-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 8px 0 0 8px;
-  animation: moveImage 10s infinite alternate;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
-@keyframes moveImage {
-  0% {
-    transform: scale(1) translateX(0);
-  }
-  100% {
-    transform: scale(1.05) translateX(-10px);
-  }
+.carousel-image.active {
+  opacity: 1;
 }
 
-.content-container {
-  flex: 1;
-  padding: 40px;
-  background-color: #f4f4f4;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.carousel-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  z-index: 10;
 }
 
 .content-heading {
   font-size: 3rem;
   font-weight: bold;
-  color: #333333;
   margin-bottom: 20px;
 }
 
 .content-text {
   font-size: 1.2rem;
-  color: #555555;
-  line-height: 1.6;
   margin-bottom: 30px;
 }
 
-
 .search-button {
-  width: 250px;
   padding: 15px 30px;
   font-size: 1rem;
   background-color: #007bff;
@@ -74,9 +70,30 @@
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s;
-  margin-left: 200px;
 }
 
 .search-button:hover {
   background-color: #0056b3;
+}
+
+.project-list, .team, .clients, .learn-more {
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+/* Additional space for other components */
+.project-list {
+  margin-top: 20px;
+}
+
+.team {
+  margin-top: 20px;
+}
+
+.clients {
+  margin-top: 20px;
+}
+
+.learn-more {
+  margin-top: 20px;
 }

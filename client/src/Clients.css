@@ -1,0 +1,51 @@
+/* src/components/Clients.css */
+.clients-container {
+    padding: 20px;
+  }
+  
+  .client-comment {
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .client-image {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+  
+  .client-details {
+    flex: 1;
+  }
+  
+  .client-rating {
+    margin-bottom: 10px;
+  }
+  
+  .star {
+    color: gold;
+    font-size: 16px;
+  }
+  
+  .show-more {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .show-more:hover {
+    background: #0056b3;
+  }
+  
