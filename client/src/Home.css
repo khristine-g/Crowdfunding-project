@@ -3,11 +3,16 @@
   width: 100vw;
   height: 100%; /* Adjust height to accommodate all content */
   overflow: hidden;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 100px;
+ 
 }
+
 
 .carousel {
   width: 100%;
-  height: 70vh; /* Carousel takes up 70% of the viewport height */
+  height: 80vh; /* Carousel takes up 70% of the viewport height */
   position: relative;
   overflow: hidden;
 }
@@ -19,7 +24,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  transition: transform 1s ease-in-out;
+  transition: transform 2s ease-in-out;
+ 
 }
 
 .carousel-image {
@@ -31,6 +37,7 @@
   left: 0;
   opacity: 0;
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  border-radius: 18px;
 }
 
 .carousel-image.active {
@@ -76,15 +83,6 @@
   background-color: #0056b3;
 }
 
-.project-list, .team, .clients, .learn-more {
-  padding: 20px;
-  background: #f9f9f9;
-}
-
-/* Additional space for other components */
-.project-list {
-  margin-top: 20px;
-}
 
 .team {
   margin-top: 20px;

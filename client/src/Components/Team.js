@@ -3,7 +3,10 @@ import "../Team.css";
 
 const Team = () => {
   return (
+    <>
+     <h1 classname="team-title"> OUR TEAM</h1>
     <div className="team-container">
+     
       <div className="team-images">
         <img 
           src="https://peopleofcolorintech.com/wp-content/uploads/2022/10/AdobeStock_297800292-scaled-1.jpeg" 
@@ -37,6 +40,7 @@ const Team = () => {
         <h4 className="team-role">Project Manager</h4>
       </div>
     </div>
+    </>
   );
 };
 

@@ -5,7 +5,13 @@
     align-items: center; 
     padding: 20px;
     width: 100%;
-    gap: 20px; /* Space between items */
+    gap: 10px; 
+  }
+  .team-title{
+
+
+  margin-left: 400px;
+  color: blue;
   }
   
   .team-images {
@@ -13,13 +19,14 @@
     flex-direction: column; 
     align-items: center;
     text-align: center;
-    width: 300px; /* Adjust width if needed */
+    width: 400px; /* Adjust width if needed */
+ 
     margin: 0 10px; /* Horizontal spacing between items */
   }
   
   .team-images img {
     width: 100%; 
-    height: 300px; /* Adjust height if needed */
+    height: 500px; /* Adjust height if needed */
     object-fit: cover;
     margin-bottom: 10px; /* Space between image and text */
   }
@@ -28,6 +35,7 @@
     font-size: 1.2rem;
     font-weight: bold;
     margin-top: 10px;
+   
   }
   
   .team-role {
