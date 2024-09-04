@@ -1,34 +1,45 @@
-.learnmore-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f4f4f4;
-    margin-bottom: 200px;
-
-
-}
-.learnmore-content{
-    
-   margin: 100px;
-   padding: 40px;
-
-}
-.learnmore-title{
-
-    font-size: 2.5rem; /* Adjust size for better readability */
+.learnmore-container {
+    width: 98vw;
+ 
+  
+  }
+  
+  .learnmore-carousel .carousel-slide {
+    position: relative;
+  }
+  
+  .learnmore-carousel img {
+    width: 100vw;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .learnmore-content {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 40%;
+  }
+  
+  .learnmore-title {
+    font-size: 2.5rem;
     font-weight: bold;
-    color: #333333;
+    color: #fff;
     margin-bottom: 10px;
-}
-.learnmore-paragraph{
-
-    font-size: 1.2rem; /* Adjust size for better readability */
-    color: #555555;
+  }
+  
+  .learnmore-paragraph {
+    font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 20px;
-}
-.submitproject-button{
-
+  }
+  
+  .submitproject-button {
     padding: 10px 20px;
     font-size: 1rem;
     background-color: #007bff;
@@ -37,12 +48,9 @@
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
-}
-
-.learnmore-button:hover {
+  }
+  
+  .submitproject-button:hover {
     background-color: #0056b3;
   }
-
-  
-  
   
