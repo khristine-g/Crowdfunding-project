@@ -4,8 +4,11 @@ import "../Team.css";
 const Team = () => {
   return (
     <>
-     <h1 classname="team-title"> OUR TEAM</h1>
+          <h1 classname="team-title" style={{marginLeft:'600px'}}> OUR TEAM</h1>
+    
     <div className="team-container">
+    
+
      
       <div className="team-images">
         <img 

@@ -52,7 +52,7 @@ const ProjectList = ({ showAll }) => {
     setSelectedCategoryId(selected);
   };
 
-  const displayedProjects = showAll ? projects : projects.slice(0, 4);
+  const displayedProjects = showAll ? projects : projects.slice(0, 8);
 
   return (
     
@@ -69,14 +69,20 @@ const ProjectList = ({ showAll }) => {
             onChange={handleCategoryChange}
           >
             <option value="">All</option>
+        
             {categories.map(category => (
               <option key={category.id} value={category.id}>
                 {category.name}
               </option>
             ))}
+       
+
+          
           </select>
         </div>
+     
       )}
+   
       <div className="project-list">
         {displayedProjects.map(project => {
           const progress = (project.amount_raised / project.goal_amount) * 100;
@@ -101,6 +107,7 @@ const ProjectList = ({ showAll }) => {
         )}
       </div>
       </div>
+
     </>
   );
 };

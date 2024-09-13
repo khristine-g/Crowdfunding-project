@@ -48,15 +48,16 @@ const Home = () => {
       <div className="project-list">
         <ProjectList />
       </div>
+      <div className="learn-more">
+        <LearnMore />
+      </div>
       <div className="team">
         <Team />
       </div>
       <div className="clients">
         <Clients />
       </div>
-      <div className="learn-more">
-        <LearnMore />
-      </div>
+      
     </div>
   );
 };
