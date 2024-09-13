@@ -6,6 +6,7 @@ import LearnMore from './LearnMore';
 import Clients from './Clients';
 import Team from './Team';
 import ProjectStats from './ProjectStats';
+import Footer from './Footer';
 
 const Home = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -52,14 +53,18 @@ const Home = () => {
       <div className="learn-more">
         <LearnMore />
       </div>
-      <div className="team">
-        <Team />
-      </div>
+     
       <div className="clients">
         <Clients />
       </div>
       <div className="clients">
         <ProjectStats />
+      </div>
+      <div className="team">
+        <Team />
+      </div>
+      <div className="team">
+        <Footer />
       </div>
       
     </div>

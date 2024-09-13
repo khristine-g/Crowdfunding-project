@@ -14,17 +14,18 @@
   object-fit: cover;
   border-radius: 8px;
   transition: transform 1s ease, filter 0.5s ease;
+  filter: brightness(0.3);
 }
 
 .carousel-slide:hover .learnmore-image {
   transform: scale(1.1);
-  filter: brightness(0.8);
+  filter: brightness(0.3);
 }
 
 .learnmore-content {
   position: absolute;
-  bottom: 30px;
-  left: 50px;
+  bottom: 100px;
+  left: 400px;
   background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
   color: #fff;
   padding: 20px;
@@ -36,13 +37,15 @@
   font-size: 2.5rem;
   font-weight: bold;
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 
 .learnmore-paragraph {
   font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 20px;
+  margin-left: 150px;
+  color: green;
 }
 
 .submitproject-button {
@@ -54,6 +57,8 @@
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s;
+  margin-left: 150px;
+  height: 50px;
 }
 
 .submitproject-button:hover {

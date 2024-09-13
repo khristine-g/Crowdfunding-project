@@ -18,12 +18,13 @@ const LearnMore = () => {
           className="learnmore-image"
         />
         <div className="learnmore-content">
-          <h2 className="learnmore-title">Bring your creative project to life</h2>
-          <p className="learnmore-paragraph">
-            The follow-up to Cities of Magick #1, a fantasy-western tale set in the post-post-post-apocalypse! Combines issues #2 & #3 into one book!
+        <p className="learnmore-paragraph">
+            The world is full of creativity
           </p>
+          <h2 className="learnmore-title">Bring your creative project to life</h2>
+          
           <button className="submitproject-button" onClick={handleLearnMoreClick}>
-            Submit Project
+            Submit a Project
           </button>
         </div>
       </div>

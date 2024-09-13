@@ -7,6 +7,12 @@ const Team = () => {
           <h1 classname="team-title" style={{marginLeft:'600px'}}> OUR TEAM</h1>
     
     <div className="team-container">
+      <div className="team-main-img">
+    <img 
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmINo9bZlBhzf2V1JMLG0KjCKmImVSGqRYaDyR_iG0toCKVmcJPrW9FT6OfijNdoIWQZU&usqp=CAU " 
+          alt="team member" 
+        />
+        </div>
     
 
      
