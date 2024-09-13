@@ -5,6 +5,7 @@ import ProjectList from "./ProjectList";
 import LearnMore from './LearnMore';
 import Clients from './Clients';
 import Team from './Team';
+import ProjectStats from './ProjectStats';
 
 const Home = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -56,6 +57,9 @@ const Home = () => {
       </div>
       <div className="clients">
         <Clients />
+      </div>
+      <div className="clients">
+        <ProjectStats />
       </div>
       
     </div>

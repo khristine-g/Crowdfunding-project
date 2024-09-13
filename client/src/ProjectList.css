@@ -1,4 +1,115 @@
-.project-list-container{
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-right: 200px;
+  margin-left: 200px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.project-list-title {
+  text-align: center;
+  font-size: 3.0rem;
+  /* color: #333333; */
+
+  margin-top: 50px;
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 1s ease-in-out;
+  overflow: hidden;
+ 
+}
+
+.project-card {
+ 
+  width: 600px;
+
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+  margin: 20px;
+  filter: brightness(0.8);
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-info {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  width: 100%;
+  padding: 20px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  text-align: center;
+}
+
+.carousel-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.carousel-button:hover {
+  background-color: #0056b3;
+}
+
+.prev-button {
+  margin-right: 10px;
+}
+
+.next-button {
+  margin-right: 10px;
+}
+
+.view-all-button {
+  width: 15%;
+  height: 50px;
+  margin-left: 650px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.view-all-button:hover {
+  background-color: #0056b3;
+}
+ .progress-bar {
+  width: 100%;
+  background-color: #f3f3f3;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+.progress {
+  height: 10px;
+  background-color: #28a745;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+
+/* .project-list-container{
 
 margin-right: 10px;
 }
@@ -62,6 +173,10 @@ margin-right: 10px;
   border-bottom-right-radius: 8px;
   text-align: center;
 }
+.project-info:hover{
+
+  background-color: midnightblue;
+}
 
 .project-info h4 {
   font-size: 18px;
@@ -92,3 +207,4 @@ margin-right: 10px;
 .view-all-button:hover {
   background-color: #0056b3;
 }
+ */

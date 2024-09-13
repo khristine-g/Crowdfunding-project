@@ -1,0 +1,29 @@
+.project-stats-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    margin: 50px 0;
+    height: 500px;
+    background-color: #0056b3;
+  }
+  
+  .stats-box {
+    text-align: center;
+    margin-top: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  
+  .stats-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .stats-box div {
+    font-size: 2rem;
+    color: #007bff;
+  }
+  

@@ -18,7 +18,7 @@ const Clients = () => {
 
   return (
     <div className="clients-container">
-      <p>WHAT OUR CLIENTS ARE SAYING</p>
+      <h1>WHAT OUR CLIENTS ARE SAYING</h1>
       <div className="client-carousel">
         {comments.slice(currentSlide * commentsPerSlide, (currentSlide + 1) * commentsPerSlide).map((comment, index) => (
           <div key={index} className="client-comment">
