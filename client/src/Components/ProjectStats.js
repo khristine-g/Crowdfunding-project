@@ -23,22 +23,22 @@ const ProjectStats = () => {
     <div id="stats-section" className="project-stats-container">
       <div className="stats-box">
         
-        {inView && <CountUp style={{fontSize:"50px",color:"white"}}start={0} end={500} duration={3} />}
+        {inView && <CountUp style={{fontSize:"50px",color:"white"}}start={0} end={700} duration={3} />}
         <h3>Completed Projects</h3>
       </div>
       <div className="stats-box">
         
-        {inView && <CountUp style={{fontSize:"50px",color:"white"}} start={0} end={1200000} duration={3} prefix="$" />}
+        {inView && <CountUp style={{fontSize:"50px",color:"white"}} start={0} end={3200000} duration={3} prefix="$" />}
         <h3> Raised to Date</h3>
       </div>
       <div className="stats-box">
         
-        {inView && <CountUp style={{fontSize:"50px",color:"white"}}start={0} end={150} duration={3} />}
+        {inView && <CountUp style={{fontSize:"50px",color:"white"}}start={0} end={250} duration={3} />}
         <h3>Partner Fundings</h3>
       </div>
       <div className="stats-box">
         
-        {inView && <CountUp style={{fontSize:"50px",color:"white"}}start={0} end={300} duration={3} />}
+        {inView && <CountUp style={{fontSize:"50px",color:"white"}}start={0} end={600} duration={3} />}
         <h3>Happy Repeat Clients</h3>
       </div>
     </div>

@@ -16,11 +16,37 @@ const SubmitProject = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log('Form submitted:', formData);
+    
+    try {
+      const response = await fetch('http://localhost:3000/submit_projects', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          submit_project: {
+            name: formData.projectName,
+            description: formData.projectDescription,
+            contact_email: formData.contactEmail
+          }
+        })
+      });
+  
+      const result = await response.json();
+  
+      if (response.ok) {
+        alert('Project submitted successfully:', result);
+        // Optionally reset the form or show a success message
+      } else {
+        console.error('Error submitting project:', result.errors);
+      }
+    } catch (error) {
+      console.error('An error occurred:', error);
+    }
   };
+  
 
   return (
     <div className="submit-project-container">

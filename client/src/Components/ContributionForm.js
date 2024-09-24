@@ -76,6 +76,12 @@ const ContributionForm = () => {
   };
 
   return (
+    <>
+    <img
+          src="https://obsidi.com/wp-content/uploads/2022/03/twoblackwomenreviewinganalytics_cropped.jpg"
+          alt="Creative Project"
+          className="form-image"
+        />
     <div className="contribution-form">
       <h2>Contribute to Project</h2>
       <form onSubmit={handleSubmit}>
@@ -105,6 +111,7 @@ const ContributionForm = () => {
         </button>
       </form>
     </div>
+    </>
   );
 };
 

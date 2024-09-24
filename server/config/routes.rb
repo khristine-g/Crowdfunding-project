@@ -3,7 +3,9 @@ Rails.application.routes.draw do
   resources :projects, only: [:index, :show] do
     resources :contributions, only: [:create]
     resources :comments, only: [:create, :index]
+ 
   end
+  resources :submit_projects, only: [:create]
 
   resources :categories, only: [:index]
 

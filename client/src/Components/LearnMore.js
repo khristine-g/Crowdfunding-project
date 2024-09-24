@@ -13,7 +13,7 @@ const LearnMore = () => {
     <div className="learnmore-container">
       <div className="carousel-slide">
         <img
-          src="https://obsidi.com/wp-content/uploads/2022/03/twoblackwomenreviewinganalytics_cropped.jpg"
+          src=" https://t3.ftcdn.net/jpg/04/22/96/52/360_F_422965230_WnyQ93M3iTjgpS0AiWlhBoL3dGqGC0IZ.jpg"
           alt="Creative Project"
           className="learnmore-image"
         />
